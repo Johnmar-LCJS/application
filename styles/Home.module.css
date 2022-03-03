@@ -27,13 +27,6 @@
 	align-items: center;
 }
 
-.navbar {
-	display: flex;
-	flex: 1;
-	padding: 1rem 0;
-	background: linear-gradient(90deg, red, transparent 90%);
-}
-
 .title a {
 	color: #0070f3;
 	text-decoration: none;
