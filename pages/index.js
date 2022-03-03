@@ -33,7 +33,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<h4 style={{ textAlign: 'center' }}>Testing Page For Deployment, Framer-motion Animations, Resposive Page/Web Design, Cross-platform Compatibility. -Johnmar</h4>
+			<h4 style={{ textAlign: 'center' }}>Testing Page For Deployment, Framer-motion Animations, Resposive Page/Web Design, Cross-platform Compatibility.</h4>
 
 			<main className={styles.main}>
 				<motion.div animate={animation} variants={variants}>
