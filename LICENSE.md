@@ -1,4 +1,4 @@
-# NextJS-Application
+# LICENSE
 
     MIT License
 
