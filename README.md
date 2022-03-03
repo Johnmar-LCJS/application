@@ -1,6 +1,4 @@
-# NextJS-Application
-
-    MIT License
+MIT License
 
 Copyright (c) 2022 Johnmar-LCJS
 
