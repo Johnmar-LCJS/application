@@ -33,7 +33,7 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<div>hello</div>
+			<h4>hello</h4>
 
 			<main className={styles.main}>
 				<motion.div animate={animation} variants={variants}>
