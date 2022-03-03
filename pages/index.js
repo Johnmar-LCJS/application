@@ -37,11 +37,11 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<motion.div animate={animation} variants={variants}>
-					<h2 className={styles.title}>A New Libray, A New Framework, My New Home!</h2>
+					<h2 className={styles.title}>Animation Target</h2>
 				</motion.div>
 
 				<motion.p className={styles.description} onClick={() => cycleAnimation()} whileTap={{ scale: 0.9 }}>
-					- Johnmar A. Ylarde
+					Click/Tap me to initiate the animation
 				</motion.p>
 
 				<div className={styles.grid}>
