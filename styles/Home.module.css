@@ -17,6 +17,14 @@
 	border-radius: 2rem 2rem 0 0;
 }
 
+.sidebar {
+	background: #297eb7;
+	font-size: 0.85vw;
+	width: 100px;
+	margin: 2rem 0;
+	border-radius: 0 2rem 0 0;
+}
+
 .footer {
 	display: flex;
 	flex: 1;
