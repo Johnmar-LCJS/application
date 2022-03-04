@@ -36,7 +36,7 @@ export default function Home() {
 
 			<Frames></Frames>
 			<div className={styles.container}>
-				<motion.nav animate={animation} variants={variants} style={{ background: '#297eb7' }}>
+				<motion.nav animate={animation} variants={variants} style={{ background: '#297eb7', fontSize: '0.85vw' }}>
 					I love nanahira
 				</motion.nav>
 
