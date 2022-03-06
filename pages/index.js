@@ -33,8 +33,6 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
-			<div style={{ position: 'absolute', left: '9rem', top: '4rem' }}></div>
-
 			<div className={styles.container}>
 				<motion.nav className={styles.sidebar} animate={animation ? 'open' : 'closed'} initial={false} variants={variants}>
 					<Sidemenu />
