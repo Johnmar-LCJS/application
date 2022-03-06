@@ -12,13 +12,15 @@
 	margin: 2rem 0 0 0;
 	background: #3f3f3f;
 	border-radius: 2rem 2rem 0 0;
+	justify-content: flex-start;
+	align-items: flex-start;
 }
 
 .sidebar {
 	display: flex;
 	flex: 3rem 0;
 	margin: 2rem 0 0 0;
-	padding: 0.5vw;
+	padding: 0.5rem;
 	background: #297eb7;
 	border-radius: 0 2rem 0 0;
 }
@@ -93,24 +95,6 @@
 	border-radius: 10px;
 	transition: color 0.15s ease, border-color 0.15s ease;
 	max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-	color: #0070f3;
-	border-color: #0070f3;
-}
-
-.card h2 {
-	margin: 0 0 1rem 0;
-	font-size: 1.5rem;
-}
-
-.card p {
-	margin: 0;
-	font-size: 1.25rem;
-	line-height: 1.5;
 }
 
 .image {

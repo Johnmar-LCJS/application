@@ -44,14 +44,7 @@ export default function Home() {
 				</motion.nav>
 
 				<main className={styles.main}>
-					<div style={{ width: '3.5rem', padding: '0.5vw' }}>
-						<Button toggle={() => cycleAnimation()} />
-					</div>
-					<h4 className={styles.title}>hello</h4>
-
-					<motion.div drag dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}>
-						<Image src='/LaffeyChibi.png' alt='laffey' width={150} height={150} className={styles.image} />
-					</motion.div>
+					<Button toggle={() => cycleAnimation()} />
 				</main>
 			</div>
 
