@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from '../styles/Sidemenu.module.css'
+import { motion } from 'framer-motion'
 import Menu from './Menuarray'
 
 const Sidemenu = () => {
 	return (
-		<div className={styles.menuContainer}>
+		<motion.div className={styles.menuContainer}>
 			<Menu />
-		</div>
+		</motion.div>
 	)
 }
 
