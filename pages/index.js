@@ -39,7 +39,7 @@ export default function Home() {
 				</motion.nav>
 
 				<main className={styles.main}>
-					<div style={{ width: '4.5vw', padding: '0.5vw' }}>
+					<div style={{ width: '7vw', padding: '0.5vw' }}>
 						<Button toggle={() => cycleAnimation()} />
 					</div>
 					<h4 className={styles.title}>hello</h4>
