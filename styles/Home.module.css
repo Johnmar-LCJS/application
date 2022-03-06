@@ -1,25 +1,22 @@
 .container {
 	display: flex;
-	flex-direction: row;
 	flex: 1;
+	flex-direction: row;
 	justify-content: center;
+	padding-top: 2rem;
 }
 
 .main {
 	display: flex;
 	flex: 1;
 	min-height: 100vh;
-	margin: 2rem 0 0 0;
 	background: #3f3f3f;
 	border-radius: 2rem 2rem 0 0;
-	justify-content: flex-start;
-	align-items: flex-start;
 }
 
 .sidebar {
 	display: flex;
 	flex: 3rem 0;
-	margin: 2rem 0 0 0;
 	padding: 0.5rem;
 	background: #297eb7;
 	border-radius: 0 2rem 0 0;
@@ -29,7 +26,7 @@
 	display: flex;
 	flex: 1;
 	padding: 1rem 0;
-	border-top: 1px solid #eaeaea;
+	border-top: 1px solid rgba(234, 234, 234, 0.3);
 	justify-content: center;
 	align-items: center;
 }
@@ -39,34 +36,6 @@
 	color: #fff;
 	justify-content: center;
 	align-items: center;
-}
-
-.title a {
-	color: #0070f3;
-	text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-	text-decoration: underline;
-}
-
-.title {
-	margin: 0;
-	line-height: 1.15;
-	font-size: 3.4vh;
-}
-
-.title,
-.description {
-	text-align: center;
-}
-
-.description {
-	margin: 4rem 0;
-	line-height: 1.5;
-	font-size: 1.275vw;
 }
 
 .code {
@@ -95,11 +64,6 @@
 	border-radius: 10px;
 	transition: color 0.15s ease, border-color 0.15s ease;
 	max-width: 300px;
-}
-
-.image {
-	user-select: none;
-	-webkit-user-drag: none;
 }
 
 .logo {

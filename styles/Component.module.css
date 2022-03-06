@@ -1,0 +1,51 @@
+.menubtn {
+	padding: 1rem;
+}
+
+.thumbnail {
+	border: 5px solid red;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-width: 500px;
+}
+
+.menuContainer {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.menuA {
+	border-bottom: 2px solid white;
+}
+
+.menuA div,
+.menuB div {
+	margin: 2.5rem 0;
+	text-align: center;
+}
+
+.menuA div:hover,
+.menuB div:hover {
+	cursor: pointer;
+}
+
+.console {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 4rem 0;
+	background: #282828;
+	border-width: 1rem 0 1rem 0;
+	border-style: inset;
+	border-color: #b179f1;
+	border-radius: 1rem;
+}
