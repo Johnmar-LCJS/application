@@ -1,27 +1,25 @@
 .container {
-	flex: 1;
 	display: flex;
 	flex-direction: row;
+	flex: 1;
 	justify-content: center;
 }
 
 .main {
+	display: flex;
+	flex: 1;
 	min-height: 100vh;
 	margin: 2rem 0 0 0;
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background: #3f3f3f;
 	border-radius: 2rem 2rem 0 0;
 }
 
 .sidebar {
-	background: #297eb7;
-	font-size: 0.85vw;
-	width: 100px;
+	display: flex;
+	flex: 7.5rem 0;
 	margin: 2rem 0 0 0;
+	padding: 1rem;
+	background: #297eb7;
 	border-radius: 0 2rem 0 0;
 }
 

@@ -1,8 +1,14 @@
 import React from 'react'
-import styles from '../styles/sidemenu.module.css'
+import styles from '../styles/Sidemenu.module.css'
+import { motion } from 'framer-motion'
+import Menu from './Menuarray'
 
-function sidemenu() {
-	return <div className={styles.sidemenu}>I love nanahira</div>
+const Sidemenu = () => {
+	return (
+		<div className={styles.menuContainer}>
+			<Menu />
+		</div>
+	)
 }
 
-export default sidemenu
+export default Sidemenu

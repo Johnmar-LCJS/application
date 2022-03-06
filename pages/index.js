@@ -2,22 +2,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { motion, useCycle } from 'framer-motion'
 import styles from '../styles/Home.module.css'
-import Button from '../components/button'
+import Button from '../components/Button'
+import Sidemenu from '../components/Sidemenu'
 
 const variants = {
 	open: {
 		opacity: 1,
 		x: 0,
 		transition: {
-			duration: 0.5,
-			type: 'spring',
+			duration: 0.1,
 		},
 	},
 	closed: {
 		opacity: 0,
 		x: '-100%',
 		transition: {
-			duration: 0.5,
+			duration: 0.1,
 		},
 	},
 }
@@ -33,17 +33,18 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
+			<div style={{ position: 'absolute', left: '9rem', top: '4rem' }}></div>
+
 			<div className={styles.container}>
-				<motion.div animate={animation ? 'open' : 'closed'} variants={variants} className={styles.sidebar} initial='closed'>
-					I love nanahira
-				</motion.div>
+				<motion.nav className={styles.sidebar} animate={animation ? 'open' : 'closed'} initial={false} variants={variants}>
+					<Sidemenu />
+				</motion.nav>
 
 				<main className={styles.main}>
 					<div>
-						<h2 className={styles.title}>Click the button below to open sidebar</h2>
+						<Button toggle={() => cycleAnimation()} />
 					</div>
-
-					<Button toggle={() => cycleAnimation()}></Button>
+					<h4 className={styles.title}>hello</h4>
 
 					<motion.div drag dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}>
 						<Image src='/LaffeyChibi.png' alt='laffey' width={150} height={150} className={styles.image} />
