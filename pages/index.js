@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { motion, useCycle } from 'framer-motion'
 import styles from '../styles/Home.module.css'
 import Button from '../components/button'
-import Sidemenu from '../components/sideMenu'
+import Sidemenu from '../components/sidemenu'
 
 const variants = {
 	open: {

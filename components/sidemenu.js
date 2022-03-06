@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Sidemenu.module.css'
 import { motion } from 'framer-motion'
-import Menu from './menuItems'
+import Menu from './menuitems'
 
 const Sidemenu = () => {
 	return (

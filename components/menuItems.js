@@ -3,14 +3,13 @@ import Image from 'next/image'
 import styles from '../styles/Sidemenu.module.css'
 import { motion } from 'framer-motion'
 
-const iconSize = 55
+const iconSize = 50
 
 const Menuarray = () => {
 	return (
 		<div className={styles.menuItems}>
 			<motion.div whileTap={{ scale: '0.95' }}>
 				<Image src='/backIcon.svg' alt='back' width={iconSize} height={iconSize} />
-				hello
 			</motion.div>
 
 			<motion.div whileTap={{ scale: '0.95' }}>
