@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { motion, useCycle } from 'framer-motion'
 import styles from '../styles/Home.module.css'
-import Button from '../components/Button'
-import Sidemenu from '../components/Sidemenu'
+import Button from '../components/button'
+import Sidemenu from '../components/sidemenu'
 
 const variants = {
 	open: {
