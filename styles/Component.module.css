@@ -2,10 +2,6 @@
 	padding: 1rem;
 }
 
-.thumbnail {
-	border: 5px solid red;
-}
-
 .controls {
 	display: flex;
 	align-items: center;
@@ -13,11 +9,15 @@
 	flex-wrap: wrap;
 }
 
+.controlbtns {
+	margin: 2rem;
+	cursor: pointer;
+}
+
 .menuContainer {
 	flex: 1;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 }
 
 .menuA {
@@ -30,8 +30,9 @@
 	text-align: center;
 }
 
-.menuA div:hover,
-.menuB div:hover {
+.menubtn,
+.menuA div,
+.menuB div {
 	cursor: pointer;
 }
 
@@ -41,10 +42,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 4rem 0;
 	background: #282828;
 	border-width: 1rem 0 1rem 0;
 	border-style: inset;
 	border-color: #b179f1;
 	border-radius: 1rem;
+	box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
 }
