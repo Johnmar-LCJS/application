@@ -9,15 +9,20 @@ const variants = {
 	open: {
 		opacity: 1,
 		x: 0,
+		display: 'block',
 		transition: {
-			duration: 0.1,
+			duration: 0.2,
 		},
 	},
 	closed: {
 		opacity: 0,
 		x: '-100%',
+		display: 'none',
 		transition: {
-			duration: 0.1,
+			duration: 0.2,
+			display: {
+				delay: 0.2,
+			},
 		},
 	},
 }
@@ -39,7 +44,7 @@ export default function Home() {
 				</motion.nav>
 
 				<main className={styles.main}>
-					<div style={{ width: '7vw', padding: '0.5vw' }}>
+					<div style={{ width: '3.5rem', padding: '0.5vw' }}>
 						<Button toggle={() => cycleAnimation()} />
 					</div>
 					<h4 className={styles.title}>hello</h4>

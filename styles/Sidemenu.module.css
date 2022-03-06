@@ -5,11 +5,12 @@
 	justify-content: center;
 }
 
-.menuItems {
-	display: block;
+.menuA {
+	border-bottom: 2px solid white;
 }
 
-.menuItems div {
+.menuA div,
+.menuB div {
 	margin: 2.5rem 0;
 	text-align: center;
 }
