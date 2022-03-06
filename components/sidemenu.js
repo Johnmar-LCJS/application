@@ -5,9 +5,9 @@ import Menu from './Menuarray'
 
 const Sidemenu = () => {
 	return (
-		<div className={styles.menuContainer}>
+		<motion.div className={styles.menuContainer}>
 			<Menu />
-		</div>
+		</motion.div>
 	)
 }
 
