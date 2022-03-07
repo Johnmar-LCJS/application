@@ -1,5 +1,29 @@
 .menubtn {
+	margin: 1rem;
+}
+.console {
+	background: #282828;
+	border-width: 1rem 0 1rem 0;
+	border-style: inset;
+	border-color: #b179f1;
+	border-radius: 1rem;
+	box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
+}
+
+.moduleControls {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.modulebtn {
 	padding: 1rem;
+}
+
+.image {
+	-webkit-user-drag: none;
+	user-select: none;
 }
 
 .controls {
@@ -11,7 +35,6 @@
 
 .controlbtns {
 	margin: 0.75rem;
-	cursor: pointer;
 }
 
 .menuContainer {
@@ -30,22 +53,11 @@
 	text-align: center;
 }
 
+.modulebtn,
+.controlbtns,
+.thumbnail,
 .menubtn,
 .menuA div,
 .menuB div {
 	cursor: pointer;
-}
-
-.console {
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: #282828;
-	border-width: 1rem 0 1rem 0;
-	border-style: inset;
-	border-color: #b179f1;
-	border-radius: 1rem;
-	box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
 }

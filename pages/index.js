@@ -4,7 +4,7 @@ import { motion, useCycle } from 'framer-motion'
 import styles from '../styles/Home.module.css'
 import Button from '../components/button'
 import Sidemenu from '../components/sidemenu'
-import Console from '../components/console'
+import Player from '../components/playermodule'
 
 const variants = {
 	open: {
@@ -28,8 +28,28 @@ const variants = {
 	},
 }
 
+const playerModule = {
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 0.2,
+		},
+	},
+	hidden: {
+		opacity: 0,
+		display: 'none',
+		transition: {
+			duration: 0.2,
+			display: {
+				delay: 0.2,
+			},
+		},
+	},
+}
+
 export default function Home() {
 	const [animation, cycleAnimation] = useCycle(false, true)
+	const [module, cycleToggle] = useCycle(false, true)
 
 	return (
 		<div>
@@ -41,25 +61,22 @@ export default function Home() {
 
 			<div className={styles.main}>
 				<motion.nav className={styles.sidebar} animate={animation ? 'open' : 'closed'} initial={false} variants={variants}>
-					<Sidemenu />
+					<Sidemenu toggle={() => cycleToggle()} />
 				</motion.nav>
 
 				<main className={styles.container}>
-					<Button toggle={() => cycleAnimation()} />
+					<div className={styles.menubtnContainer}>
+						<Button toggle={() => cycleAnimation()} />
+					</div>
 
-					<motion.div drag>
-						<Console />
+					<motion.div className={styles.playerContainer} animate={module ? 'visible' : 'hidden'} variants={playerModule}>
+						<Player toggle={() => cycleToggle()} />
 					</motion.div>
 				</main>
 			</div>
 
 			<footer className={styles.footer}>
-				<a href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app' target='_blank' rel='noopener noreferrer'>
-					Powered by{' '}
-					<span className={styles.logo}>
-						<Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-					</span>
-				</a>
+				<div>DISCLAIMER: I do not own any of the image/thumbnails used. This project is only for educational purposes or in my case it is for academic purposes.</div>
 			</footer>
 		</div>
 	)
