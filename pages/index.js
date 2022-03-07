@@ -28,20 +28,21 @@ const variants = {
 	},
 }
 
-const playerModule = {
-	visible: {
+const playerToggle = {
+	open: {
 		opacity: 1,
+		display: 'flex',
 		transition: {
 			duration: 0.2,
 		},
 	},
-	hidden: {
+	closed: {
 		opacity: 0,
 		display: 'none',
 		transition: {
-			duration: 0.2,
+			duration: 0.15,
 			display: {
-				delay: 0.2,
+				delay: 0.15,
 			},
 		},
 	},
@@ -69,7 +70,7 @@ export default function Home() {
 						<Button toggle={() => cycleAnimation()} />
 					</div>
 
-					<motion.div className={styles.playerContainer} animate={module ? 'visible' : 'hidden'} variants={playerModule}>
+					<motion.div className={styles.playerContainer} animate={module ? 'open' : 'closed'} initial={false} variants={playerToggle}>
 						<Player toggle={() => cycleToggle()} />
 					</motion.div>
 				</main>

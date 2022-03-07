@@ -5,13 +5,12 @@
 }
 
 .container {
-	display: flex;
-	flex: 1;
+	max-width: 100vh;
 	min-height: 100vh;
 	background: #3f3f3f;
+	padding: 1rem;
 	border-radius: 2rem 2rem 0 0;
 	justify-content: left;
-	align-items: left;
 }
 
 .menubtnContainer {
