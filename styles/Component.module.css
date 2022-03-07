@@ -4,6 +4,7 @@
 	border-style: inset;
 	border-color: #b179f1;
 	border-radius: 1rem;
+	margin-right: 2rem;
 	box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25), 0 10px 10px rgba(255, 255, 255, 0.22);
 }
 
@@ -18,7 +19,9 @@
 	padding: 1rem;
 }
 
-.thumbnailContainer {
+.controls,
+.thumbnailContainer,
+.songTitle {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -31,12 +34,12 @@
 	user-select: none;
 }
 
+.songTitle {
+	color: #fff;
+}
+
 .controls {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
+	flex-direction: row !important;
 }
 
 .controlbtns {

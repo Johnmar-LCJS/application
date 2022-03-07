@@ -60,12 +60,12 @@ export default function Home() {
 				<title>VSmusic</title>
 			</Head>
 
-			<div className={styles.main}>
+			<main className={styles.main}>
 				<motion.nav className={styles.sidebar} animate={animation ? 'open' : 'closed'} initial={false} variants={variants}>
 					<Sidemenu toggle={() => cycleToggle()} />
 				</motion.nav>
 
-				<main className={styles.container}>
+				<div className={styles.container}>
 					<div className={styles.menubtnContainer}>
 						<Button toggle={() => cycleAnimation()} />
 					</div>
@@ -73,12 +73,14 @@ export default function Home() {
 					<motion.div className={styles.playerContainer} animate={module ? 'open' : 'closed'} initial={false} variants={playerToggle}>
 						<Player toggle={() => cycleToggle()} />
 					</motion.div>
-				</main>
-			</div>
+				</div>
+			</main>
 
 			<footer className={styles.footer}>
 				<div>
-					<p>DISCLAIMER: I do not own any of the image/thumbnails used.</p>
+					<p>
+						<b style={{ color: '#f00' }}>DISCLAIMER:</b> I do not own any of the image/thumbnails used.
+					</p>
 					<p>This project is only for educational purposes or in my case it is for academic purposes.</p>
 				</div>
 			</footer>

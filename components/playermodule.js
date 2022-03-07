@@ -21,7 +21,7 @@ const Console = ({ toggle }) => {
 	}
 
 	return (
-		<motion.div className={styles.console} drag whileTap={{ cursor: 'grabbing' }} whileDrag={{ scale: 1.075, cursor: 'grabbing' }} whileHover={{ cursor: 'grab' }} dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} dragTransition={{ bounceStiffness: 125, bounceDamping: 10 }}>
+		<motion.div className={styles.console} drag whileDrag={{ scale: 1.075, cursor: 'grabbing' }} dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} dragTransition={{ bounceStiffness: 125, bounceDamping: 10 }}>
 			<div className={styles.moduleControls}>
 				{/* <motion.div className={styles.modulebtn} whileTap={wtValue}>
 					<Image src='/minimizebtnIcon.svg' alt='Mini' width={35} height={35} />
@@ -34,8 +34,12 @@ const Console = ({ toggle }) => {
 
 			<div className={styles.thumbnailContainer}>
 				<motion.div className={styles.thumbnail} whileTap={wtValue}>
-					<Image src='/LaffeyChibi.png' alt='laffey' width={500} height={500} className={styles.image} />
+					<Image src='/74068966.png' alt='laffey' width={500} height={500} className={styles.image} />
 				</motion.div>
+			</div>
+
+			<div className={styles.songTitle}>
+				<p>hello</p>
 			</div>
 
 			<div className={styles.controls}>
