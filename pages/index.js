@@ -77,7 +77,10 @@ export default function Home() {
 			</div>
 
 			<footer className={styles.footer}>
-				<div>DISCLAIMER: I do not own any of the image/thumbnails used. This project is only for educational purposes or in my case it is for academic purposes.</div>
+				<div>
+					<p>DISCLAIMER: I do not own any of the image/thumbnails used.</p>
+					<p>This project is only for educational purposes or in my case it is for academic purposes.</p>
+				</div>
 			</footer>
 		</div>
 	)
