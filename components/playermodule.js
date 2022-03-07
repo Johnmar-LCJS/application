@@ -34,12 +34,12 @@ const Console = ({ toggle }) => {
 
 			<div className={styles.thumbnailContainer}>
 				<motion.div className={styles.thumbnail} whileTap={wtValue}>
-					<Image src='/74068966.png' alt='laffey' width={500} height={500} className={styles.image} />
+					<Image src='/91353945_p0.png' alt='thumbnail' width={500} height={500} priority className={styles.image} />
 				</motion.div>
 			</div>
 
 			<div className={styles.songTitle}>
-				<p>hello</p>
+				<p>Song Title Here</p>
 			</div>
 
 			<div className={styles.controls}>
