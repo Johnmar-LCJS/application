@@ -34,7 +34,7 @@ const Console = ({ toggle }) => {
 
 			<div className={styles.thumbnailContainer}>
 				<motion.div className={styles.thumbnail} whileTap={wtValue}>
-					<Image src='/91353945_p0.png' alt='thumbnail' width={500} height={500} priority className={styles.image} />
+					<Image src='' alt='thumbnail' width={500} height={500} priority className={styles.image} />
 				</motion.div>
 			</div>
 
@@ -62,7 +62,7 @@ const Console = ({ toggle }) => {
 					<Image src='/mediaforwardIcon.svg' alt='forwards' width={btnSize} height={btnSize} />
 				</motion.div>
 
-				<audio ref={music} src='/Audio.wav' defer />
+				<audio ref={music} src='' defer />
 			</div>
 		</motion.div>
 	)
