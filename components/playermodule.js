@@ -62,7 +62,7 @@ const Console = ({ toggle }) => {
 					<Image src='/mediaforwardIcon.svg' alt='forwards' width={btnSize} height={btnSize} />
 				</motion.div>
 
-				<audio ref={music} src='' defer />
+				<audio ref={music} src='/Audio.wav' defer />
 			</div>
 		</motion.div>
 	)

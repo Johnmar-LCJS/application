@@ -6,7 +6,7 @@
 
 .container {
 	display: flex;
-	flex: minman(100px, auto) 0;
+	flex: minmax(100px, auto) 0;
 	min-height: 100vh;
 	background: #3f3f3f;
 	padding: 1rem;
