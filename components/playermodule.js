@@ -39,7 +39,7 @@ const Console = ({ toggle }) => {
 			</div>
 
 			<div className={styles.songTitle}>
-				<p>Song Title Here</p>
+				<h2>Sven is a gay</h2>
 			</div>
 
 			<div className={styles.controls}>
